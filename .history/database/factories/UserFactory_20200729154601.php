@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 
-// User
+
 $factory->define(App\User::class, function (Faker\Generator $faker) {
     static $password;
 
