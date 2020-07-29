@@ -23,6 +23,6 @@ class UserSeeder extends Seeder
             'state' => 'ACTIVE',
 
         ]);
-        factory(App\User::class, 100)->create();
+        
     }
 }

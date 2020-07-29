@@ -29,7 +29,7 @@ class ProfessionalSeeder extends Seeder
             'state' => 'ACTIVE'
 
         ]);
-        factory(App\Professional::class, 100)->create();
+        factory(App\User::class, 100)->create();
 
     }
 }

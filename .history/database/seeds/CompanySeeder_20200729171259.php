@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class ProfessionalSeeder extends Seeder
+class CompanySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,21 +12,19 @@ class ProfessionalSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('professionals') -> insert([
+        DB::table('companies') -> insert([
             'id' => '1',
             'user_id' => '1',
-            'identity' => 'MALE',
+            'identity' => '1',
+            'nature' => 'AMB',
             'email' => 'PIMP@GMAIL.COM',
-            'first_name' => 'AAA',
-            'last_name' => 'BBB',
-            'nationality' => 'EC',
-            'civil_state' => 'S',
-            'birthdate' => '01-12-99',
-            'gender' => 'MALE',
+            'trade_name' => 'PIMP',
+            'comercial_activity' => 'DRUG DEALER',
             'phone' => '022123456',
+            'cell_phone' => '1234567890',
+            'web_page' => 'WWW.MYSITE.COM',
             'address' => 'COMITE DEL PUEBLO',
-            'about_me' => 'lalaland',
-            'state' => 'ACTIVE'
+            'state' => 'ACTIVE',
 
         ]);
         factory(App\Professional::class, 100)->create();

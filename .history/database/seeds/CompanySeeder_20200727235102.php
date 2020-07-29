@@ -27,7 +27,5 @@ class CompanySeeder extends Seeder
             'state' => 'ACTIVE',
 
         ]);
-        factory(App\Company::class, 100)->create();
-
     }
 }

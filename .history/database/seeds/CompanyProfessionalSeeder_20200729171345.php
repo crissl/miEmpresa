@@ -18,6 +18,6 @@ class CompanyProfessionalSeeder extends Seeder
             'professional_id' => '1',
             'state' => 'ACTIVE'
         ]);
-
+        
     }
 }

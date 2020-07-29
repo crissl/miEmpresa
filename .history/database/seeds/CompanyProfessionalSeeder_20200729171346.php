@@ -18,6 +18,7 @@ class CompanyProfessionalSeeder extends Seeder
             'professional_id' => '1',
             'state' => 'ACTIVE'
         ]);
+        factory(App\Professional::class, 100)->create();
 
     }
 }
